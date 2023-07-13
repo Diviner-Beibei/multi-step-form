@@ -116,10 +116,6 @@ function nextStep(state) {
     document.querySelector(".go-back-btn").classList.remove("visible");
   }
 
-  // if (STEP_2 === state.statue) {
-  //   return;
-  // }
-
   switchStatue(state, 1);
 
   if (state.statue === STEP_3) {
@@ -243,6 +239,7 @@ additionalServiceList.addEventListener('click', function (e) {
 
   //Add selected effect
   const node = e.target.closest(".additional-service-card");
+  if (node === null || node === undefined) return;
   node.classList.toggle("plan-card-selected");
   const checkbox = node.querySelector("input[type='checkbox']");
   checkbox.checked = !checkbox.checked;
