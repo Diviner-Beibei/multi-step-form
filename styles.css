@@ -69,7 +69,6 @@ main{
 
 .main-container{  
   min-height: 55rem;
-  /* width: 82.2rem; */
   border-radius: 0.8rem;
   background-color: var(--color-neutral-magnolia);
 
@@ -79,6 +78,7 @@ main{
 
 @media (min-width: 750px) {
   .main-container{
+    min-width: 88rem;
     display: grid;
     grid-template-columns: 25rem 1fr;
     background-color: var(--color-neutral-white);
@@ -184,6 +184,8 @@ main{
   flex-direction: column;
   justify-content:space-between;
   height: 100%;
+  width: 100%;
+  margin-right: auto;
 }
 
 @media (min-width: 750px) {
@@ -341,7 +343,6 @@ main{
 .additional-service-card{
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   gap: 2rem;
 
   border: 0.2rem solid var(--color-neutral-light-gray);
@@ -489,7 +490,6 @@ main{
 
 .go-back-btn{
   display: block;
-  /*Step 2*/
   color: var(--color-neutral-cool-gray);
   background-color: var(--color-neutral-white);
 
@@ -543,32 +543,9 @@ main{
   opacity: 0.5;
 }
 
-/************temporary***********/
-/* .step-block-1{
-  display: none;
-} */
-
-
-
-/* .step-block-2{
-  display: none;
-}
-
-.step-block-3{
-  display: none;
-}
-
-.step-block-4{
-  display: none;
-}
-
-.finish-block{
-  display: none;
-}
-
-.btn-group{
-  display: flex;
-} */
+/*****************************
+           media
+*****************************/
 
 @media (max-width: 750px) {
 
