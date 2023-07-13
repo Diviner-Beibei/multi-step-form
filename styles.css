@@ -69,6 +69,7 @@ main{
 
 .main-container{  
   min-height: 55rem;
+  /* width: 82.2rem; */
   border-radius: 0.8rem;
   background-color: var(--color-neutral-magnolia);
 
@@ -275,7 +276,15 @@ main{
 
   .plan-card{
     flex-direction: column;
+    height: 17rem;
+    width: 16rem;
   }
+}
+
+.plan-card-info{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .plan-level{
@@ -360,6 +369,8 @@ main{
 }
 
 .additional-service-card input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   width: 1.92rem;
   height: 1.92rem;
@@ -465,15 +476,7 @@ main{
 *****************************/
 .btn-group{
   display: flex;
-  /*Step 1*/
-  /* justify-content: end;  */
-  /*Step 2  Step 3*/
   justify-content: space-between;
-   /*Step 4*/
-
-
-   /*finish*/
-   display:none;
 }
 
 .btn{
@@ -495,26 +498,59 @@ main{
 .next-step-btn{
   color: var(--color-neutral-light-gray);
   background-color: var(--color-primary-marine-blue);
-   /*Step 4*/
-   display: none;
 }
 
 .confirm-btn{
-  display: none;
   background-color: var(--color-primary-purplish-blue);
   color: var(--color-neutral-white);
-  /*Step 4*/
-  display: block;
-
+}
+/*****************************
+           ACTIVE
+*****************************/
+.hidden{
+  display: none;
 }
 
+.visible{
+  visibility: hidden;
+}
+
+.fill{
+  background-color: var(--color-primary-light-blue) !important;
+  color: var(--color-primary-marine-blue) !important;
+}
+
+.input-error{
+  border-color: var(--color-primary-strawberry-red) !important;
+  transition: var(--tran-time);
+}
+
+.error-hint{
+  font-weight: var(--fw-5);
+  color: var(--color-primary-strawberry-red);
+}
+
+.plan-card-selected{
+  background-color: var(--color-neutral-magnolia);
+  border-color: var(--color-primary-pastel-blue);
+}
+
+.toggle-year{
+  justify-content: end;
+}
+
+.toggle-text{
+  opacity: 0.5;
+}
 
 /************temporary***********/
 /* .step-block-1{
   display: none;
 } */
 
-.step-block-2{
+
+
+/* .step-block-2{
   display: none;
 }
 
@@ -532,7 +568,7 @@ main{
 
 .btn-group{
   display: flex;
-}
+} */
 
 @media (max-width: 750px) {
 
